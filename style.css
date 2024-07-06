@@ -1,0 +1,37 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    
+}
+h1{
+    margin: 0;
+    padding:1.2rem;
+}
+p{
+    text-align: justify;
+    padding: 1rem;
+    text-indent: 2rem;
+}
+html, p, h1{
+    
+    background: linear-gradient(to right, #3e4451, rgba(29, 224, 100,.65) 100%);
+    
+    color: white;
+}
+.navbar-brand{
+
+    font-weight: 900;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.about{
+    font-weight: bold;
+}
+.secrow{
+    
+    padding: 0;
+}
+.card{
+    margin: 1rem;
+    width: 100%;
+}
