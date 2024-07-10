@@ -8,46 +8,89 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
     
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">SPD</a>
+          <a class="navbar-brand" href="#"><span id="s">S</span><span id="p">P</span><span id="d">D</span> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav operatőri-div">
               
-              <a class="nav-link about" href="#">Rólunk</a>
-              <a class="nav-link about" href="#">Pricing</a>  
+              <a class="nav-link about operatőri" href="./mellékoldalak/operator.html">Operatőri Képzés</a>
+              
             </div>
           </div>
+            <li class="nav-item dropdown collapse navbar-collapse" id="navbarNavAltMarkup">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+               Képzési szintek
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item " href="#">Alap</a></li>
+                <li><a class="dropdown-item " href="#">Haladó</a></li>
+                <li><a class="dropdown-item " href="#">Profi</a></li>
+              </ul>
+            </li>
+          
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav rolunk">
+              
+              <a class="nav-link about rólunk" href="#">Rólunk</a>
+              
+            </div>
+          </div>
+          
         </div>
       </nav>
-    <h1>Fedezze fel a jövőt a SP Drónnal!</h1>
+    <h1>Fedezze fel a jövőt az SP Drónnal!</h1>
+    <div class="bemutatodiv">
     <p id="bemutató">A dróntechnológia napjainkban alapvető készséggé vált mindennapi életünk és munkánk során. Az SP Drón célja, hogy Ön is elsajátíthassa a drónok használatához szükséges tudást és készségeket, legyen szó akár hobbi, akár professzionális felhasználásról. Képzéseinket a Magyar Nemzeti Mentődrónpilóták Egyesületének tapasztalt tagjai vezetik, akik a legmagasabb színvonalú oktatást biztosítják.</p>
+  </div>
     <div class="row">
-    <div class="col-12 justify-content-center col-md-4 d-flex flex-md-row-reverse">
+    <div class="col-12 justify-content-center col-lg-4 d-flex flex-lg-row-reverse">
     <div class="card">
         
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title">1.	Alapgyakorlat (Basic) – Kezdje az alapoknál!</h5>
+          <p class="card-text">
+            Alapgyakorlati nap ajándékai:
+            <ul>
+
+            
+            <li>	Drónozás alapműveleti online tankönyv</li>
+            <li>	Regisztrációs felületek elérhetősége</li>
+            <li>	Biztosítás megkötésének lehetőségei</li>
+            <li>	Mydronespace alkalmazás használata</li>
+            Ár: 25.000 Ft
+          </ul>
+            </p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </div>
-    <div class="col-12 justify-content-center col-md-4 d-flex justify-content-center">
+    <div class="col-12 justify-content-center col-lg-4 d-flex justify-content-center">
       <div class="card">
         
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title">2.	Haladó szint (Advanced) – Emelje magasabb szintre tudását!</h5>
+          <p class="card-text">
+          Alapgyakorlati nap ajándékai:
+          <ul>
+          <li>	Drónozás alapműveleti online tankönyv</li>
+          <li>	Regisztrációs felületek elérhetősége</li>
+          <li>	Biztosítás megkötésének lehetőségei</li>
+          <li>	Mydronespace alkalmazás használata</li>
+          Ár: 25.000 Ft
+        </ul>
+        </p>
+      
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </div>
-    <div class="col-12 justify-content-center col-md-4 d-flex flex-row">
+    <div class="col-12 justify-content-center col-lg-4 d-flex flex-row">
       <div class="card">
         
         <div class="card-body">
@@ -60,7 +103,7 @@
 </div>
     <div class="row secrow ">
     
-        <div class="col-12 justify-content-center col-md-6 d-flex flex-md-row-reverse">
+        <div class="col-12 justify-content-center col-md-6 d-flex flex-lg-row-reverse">
       <div class="card">
         
         <div class="card-body">
@@ -85,7 +128,7 @@
 
 
 
-
+<script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
