@@ -1,167 +1,251 @@
-*{
-    margin: 0; padding: 0; box-sizing: border-box;
-    
-}
-h1{
-    margin: 0;
-    padding:1.2rem;
-}
-p{
-    text-align: justify;
-    padding: 1rem;
-    text-indent: 2rem;
-}
-.col-12{
-    padding: 0;
-}
-html, h1{
-    
-    background: linear-gradient(to right, #3e4451, rgba(29, 224, 100,.65) 100%);
-    
-    color: white;
-}
-body{
-    background-image: url("../background.jpg");
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    max-width: 3000px;
-    margin: auto;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-.navbar{
-    font-size: 1.3rem;
-    padding: 0.9rem;
-}
-.navbar-brand{
-
-    font-weight: 900;
+h1 {
+  margin: 0;
+  padding: 1.2rem;
 }
 
-.container-fluid li{
-    list-style-type: none;
+p {
+  margin: 0;
+  
 }
 
-.rolunk{
+.col-12 {
+  padding: 0;
+}
+
+html,
+h1 {
+
+  background: linear-gradient(to right, #3e4451, rgba(29, 224, 100, .65) 100%);
+
+  color: white;
+}
+
+body {
+  background-image: url("../background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  max-width: 3000px;
+  margin: auto;
+  overflow-x: hidden;
+  --scroll-size: 15px;
+  --scroll-radius: 20px;
+  --scroll-track: rgb(255 255 255 / 10%);
+  --scroll-thumb: linear-gradient(45deg, #00aeff, #a68eff);
+  
+}
+
+.navbar {
+  font-size: 1.3rem;
+  padding: 0.9rem;
+}
+
+.navbar-brand {
+
+  font-weight: 900;
+}
+
+.container-fluid li {
+  list-style-type: none;
+}
+
+.rolunk {
   margin-left: auto;
 }
-.nav-item{
-    
-    /* képzési szintek divje (li) */
+
+.nav-item {
+
+  /* képzési szintek divje (li) */
 }
-.operatőri-div{
-    padding:0 .8rem 0 0;
+
+.operatőri-div {
+  padding: 0 .8rem 0 0;
 }
-.dropdown-div{
-    margin-right: auto;
+
+.dropdown-div {
+  margin-right: auto;
 }
-.dropdown{
-    color: grey;
-    font-weight: bold;
-    padding:auto 1rem;
-    margin-right: auto;
-   
-    
-}
-.dropdown-menu{
-    --bs-dropdown-padding-y: 0.5rem;
-    border-radius: .4rem;
-    background-color: #3e4451;
-}
-.dropdown-div{
-    border-radius: 1rem;
-}
-.dropdown-item{
-    background-color: #3e4451;
-    color:white;
-    font-size: 1.15rem;
-    
-}
-.dropdown-item:active{
-    background-color: rgba(29, 224, 100,.65);
-}
-.dropdown:hover{
-    color:rgb(172, 134, 208);
-    
-}
-.dropdown-toggle{
-    text-decoration: none;
-    list-style-type: none;
-}
-li {
-    
-    text-decoration: none;
-    
-}
-.about{
-    font-weight: bold;
-}
-.secrow{
-    padding: 0;
-}
-.card{
-    background-color: grey;
-    padding: 0;
-    margin: 1rem;
-    width: 100%;
-}
-.operatőri:hover{
-    color:rgb(165, 197, 115);
-}
-.rólunk:hover{
-    color: rgb(227, 148, 119);
-}
-.bemutatodiv{
-    max-width: 60rem;
-    margin: 0 auto;
-}
-#bemutató{
-    color: black;
+
+.dropdown {
+  color: grey;
+  font-weight: bold;
+  padding: auto 1rem;
+  margin-right: auto;
+
 
 }
+
+.dropdown-menu {
+  --bs-dropdown-padding-y: 0.5rem;
+  border-radius: .4rem;
+  background-color: #3e4451;
+}
+
+.dropdown-div {
+  border-radius: 1rem;
+}
+
+.dropdown-item {
+  background-color: #3e4451;
+  color: white;
+  font-size: 1.15rem;
+
+}
+
+.dropdown-item:active {
+  background-color: rgba(29, 224, 100, .65);
+}
+
+.dropdown:hover {
+  color: rgb(172, 134, 208);
+
+}
+
+.dropdown-toggle {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+
+  text-decoration: none;
+
+}
+
+.about {
+  font-weight: bold;
+}
+
+.secrow {
+  padding: 0;
+}
+
+.card {
+  
+  background-color: rgba(176, 178, 177, 0.8);
+  padding: 0;
+  margin: 1rem;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  
+}
+
+.card-text{
+  padding: 1rem;
+  white-space: nowrap;
+  
+}
+.card-title{
+  padding: 1rem;
+  margin: auto 0;
+  
+}
+.btn-primary{
+  background-color: grey;
+  float: right;
+  border: solid rgba(29, 224, 100, .65) ;
+  white-space: nowrap;
+
+}
+.btn-primary:hover{
+  background-color: rgba(29, 224, 100, .4);
+  border: solid rgba(29, 224, 100, .4) ;
+}
+.btn-primary:active{
+  border: solid rgba(29, 224, 100, .65) !important;
+  background-color: rgba(29, 224, 100, .65) !important;
+}
+.myrow{
+
+}
+.ár{
+  height: 100%;
+}
+.arcol{
+ 
+  
+}
+
+.operatőri:hover {
+  color: rgb(165, 197, 115);
+}
+
+.rólunk:hover {
+  color: rgb(227, 148, 119);
+}
+
+.bemutatodiv {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+#bemutató {
+  color: black;
+  text-align: justify;
+  padding: 1rem;
+  text-indent: 2rem;
+
+}
+
 /* design részletek */
-#s{
-    color: rgb(133, 132, 132);
-    font-size: 1.5rem;
+#s {
+  color: rgb(133, 132, 132);
+  font-size: 1.5rem;
 }
-#p{
-    color: rgb(165, 164, 164);
-    font-size: 1.5rem;
+
+#p {
+  color: rgb(165, 164, 164);
+  font-size: 1.5rem;
 }
-#d{
-    color: white;
-    font-size: 1.5rem;
+
+#d {
+  color: white;
+  font-size: 1.5rem;
 }
+
 /* javítás részek */
-.navbar-collapse{
-    flex-grow: 0;
+.navbar-collapse {
+  flex-grow: 0;
 }
-.dropdown-toggle{
-    color: #ffffff8C;
+
+.dropdown-toggle {
+  color: #ffffff8C;
 }
+
 /* GPT részek javított */
 /* Navbar items animation */
-.navbar-nav > .nav-item {
+.navbar-nav>.nav-item {
   opacity: 0;
   transform: translateY(-20px);
   animation: slideDown 0.4s forwards;
 }
 
 /* Staggered delay for each navbar item */
-.navbar-nav > .nav-item:nth-child(1) {
+.navbar-nav>.nav-item:nth-child(1) {
   animation-delay: 0.1s;
 }
 
-.navbar-nav > .nav-item:nth-child(2) {
+.navbar-nav>.nav-item:nth-child(2) {
   animation-delay: 0.2s;
 }
 
-.navbar-nav > .nav-item:nth-child(3) {
+.navbar-nav>.nav-item:nth-child(3) {
   animation-delay: 0.3s;
 }
 
-.navbar-nav > .nav-item:nth-child(4) {
+.navbar-nav>.nav-item:nth-child(4) {
   animation-delay: 0.4s;
 }
 
@@ -174,7 +258,8 @@ li {
 
 /* Staggered delay for each dropdown item */
 .dropdown-menu .dropdown-item:nth-child(1) {
-  animation-delay: 0.1s; /* Delay after navbar items */
+  animation-delay: 0.1s;
+  /* Delay after navbar items */
 }
 
 .dropdown-menu .dropdown-item:nth-child(2) {
@@ -192,51 +277,89 @@ li {
     transform: translateY(0);
   }
 }
+
 /* Ensure dropdown menu opens properly */
 .dropdown-menu {
   display: none;
 }
-.nav-item.dropdown.show  {
+
+.nav-item.dropdown.show {
   display: block;
   opacity: 1;
 }
+
 /* CSS for the navbar */
 .navbar-nav {
-    margin: 0;
-    padding: 0;
-  }
-  .navbar-nav .nav-link {
-    
-    transition: transform 0.5s ease; /* Adjusted transition duration */
-  }
-  /* CSS for the dropdown menu */
-  .dropdown-menu {
-    display: none;
-    position: absolute; 
-    z-index: 1;
-  }
-  
-  .dropdown-menu a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
 
-  
-  /* Media query for collapsing navbar */
-  @media (max-width: 991.98px) {
-    .navbar-nav .nav-link {
-      transform: none; /* Reset any previous transformations */
-    }
-  
-    .navbar-collapse.collapsing .navbar-nav .nav-link {
-      transform: none; /* Ensure links appear without any transform */
-    }
-  
-    .navbar-collapse {
-      transition: height .45s ease; /* Adjusted transition duration for navbar collapse */
-    }
+.navbar-nav .nav-link {
+
+  transition: transform 0.5s ease;
+  /* Adjusted transition duration */
+}
+
+/* CSS for the dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+/* Media query for collapsing navbar */
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link {
+    transform: none;
+    /* Reset any previous transformations */
   }
-  
+
+  .navbar-collapse.collapsing .navbar-nav .nav-link {
+    transform: none;
+    /* Ensure links appear without any transform */
+  }
+
+  .navbar-collapse {
+    transition: height .45s ease;
+    /* Adjusted transition duration for navbar collapse */
+  }
+}
+
 /* GPT részek új */
+*::-webkit-scrollbar {
+  max-height: 1rem;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  
+  background-color: #3e4451;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #3e4451;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #3e4451;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-image: linear-gradient(45deg, rgb(144, 144, 144), rgba(29, 224, 100, 0.357));
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(29, 224, 100, 0.4);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: rgba(29, 224, 100, 0.4);
+}
