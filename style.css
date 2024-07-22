@@ -14,7 +14,24 @@ h1 {
   margin: 0;
   padding: 1.2rem;
 }
-
+.row{
+  
+}
+.firsttext{
+  margin: auto;
+  
+  border-radius: 2rem;
+  
+}
+.textitself{
+  margin: auto;
+  padding: 1rem;
+}
+.topimg{
+  border-radius: 0 2rem 2rem 0;
+  opacity: 0.9;
+  width: 100%;
+}
 p {
   margin: 0;
 
@@ -24,13 +41,13 @@ p {
   padding: 0;
 }
 
-html,
-h1 {
+html, .firsttext {
 
-  background: linear-gradient(to right, #3e4451, rgba(29, 224, 100, .65) 100%);
+  background: linear-gradient(to right, #3e4451, rgba(29, 224, 100, 0.43) 100%);
 
   color: white;
 }
+
 
 body {
   background-image: url("../background.jpg");
@@ -200,15 +217,25 @@ li {
 }
 
 .bemutatodiv {
-  max-width: 60rem;
-  margin: 0 auto;
+  
+  margin: 5rem 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  
+  
+  max-width: 1000px;
+  line-height: 1.7;
+  
 }
 
 #bemutató {
   color: black;
   text-align: justify;
-  padding: 1rem;
+  padding: 3rem;
   text-indent: 2rem;
+  font-size:large;
+  background-color: #cfcece;
+  border-radius: 1rem;
 
 }
 
@@ -236,7 +263,28 @@ li {
 .dropdown-toggle {
   color: #ffffff8C;
 }
-
+.kisdrón{
+  width: 100px;
+  margin: 1rem auto 1rem auto;
+  
+}
+.kisdrón-row{
+  background-color: #fff;
+  padding: 2rem;
+}
+.rehák{
+  max-height: 33%;
+  border-radius: 1rem;
+  margin: 3rem 4rem 3rem 1rem;
+  
+}
+.rehákdiv{
+  
+  
+}
+.white{
+  background-color: #fff;
+}
 /* GPT részek javított */
 /* Navbar items animation */
 .navbar-nav>.nav-item {
