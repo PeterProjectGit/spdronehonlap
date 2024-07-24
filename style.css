@@ -14,47 +14,55 @@ h1 {
   margin: 0;
   padding: 1.2rem;
 }
-.card-text, .card-title {
+
+.card-text,
+.card-title {
   height: 50%;
   display: flex;
-  
-  align-items:start;
+
+  align-items: start;
   justify-content: center;
 }
-.row{
-  
-}
-.firsttext{
+
+.row {}
+
+.firsttext {
   margin: auto;
-  
+
   border-radius: 2rem;
-  
+
 }
-.textitself{
+
+.textitself {
   margin: auto;
   padding: 1rem;
 }
-.topimg{
+
+.topimg {
   border-radius: 0 2rem 2rem 0;
   opacity: 0.9;
   width: 100%;
 }
+
 p {
   margin: 0;
 
 }
-.allcards{
-  
 
- background-color:rgba(133, 132, 132,.8);
+.allcards {
+
+
+  background-color: rgba(133, 132, 132, .8);
 
 }
+
 .col-12 {
   padding: 0;
-  
-  }
 
-html, .firsttext {
+}
+
+html,
+.firsttext {
 
   background: linear-gradient(to right, #3e4451, rgba(29, 224, 100, 0.43) 100%);
 
@@ -63,7 +71,7 @@ html, .firsttext {
 
 
 body {
-  
+
   background-image: url("../background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,7 +173,7 @@ li {
 
 .card {
 
- background: linear-gradient(to right,#58CA58, #86BBE9);
+  background: linear-gradient(to right, #e0dfdf, #86BBE9);
   padding: 0;
   margin: 3rem;
   width: 100%;
@@ -181,14 +189,14 @@ li {
 
 .card-text {
   height: 100%;
-  display:inline-block;
-  
-  align-items:start;
+  display: inline-block;
+
+  align-items: start;
   justify-content: center;
 
 
   padding: 1rem;
-  
+
   line-height: 1.5;
   font-size: large;
 
@@ -240,15 +248,15 @@ li {
 }
 
 .bemutatodiv {
-  
+
   margin: 4rem auto;
-  
+
   padding: 1rem;
-  
-  
+
+
   max-width: 1000px;
   line-height: 1.7;
-  
+
 }
 
 #bemutató {
@@ -256,21 +264,24 @@ li {
   text-align: justify;
   padding: 3rem;
   text-indent: 2rem;
-  font-size:larger;
+  font-size: larger;
   background-color: rgba(119, 119, 119, 0.5);
-  
+
   border-radius: 1rem;
 
 }
-.miért{
+
+.miért {
   text-align: center;
-  
-  
+
+
 }
-.valasz{
+
+.valasz {
   padding: 2rem;
   text-align: center;
 }
+
 /* design részletek */
 #s {
   color: rgb(133, 132, 132);
@@ -288,32 +299,37 @@ li {
 }
 
 /* javítás részek */
-.valasztext{
+.valasztext {
   line-height: 1.5;
   margin: 5rem 0 5rem 0;
 }
-.hatterkepes{
+
+.hatterkepes {
   background-image: url("./img/szovegter.jpg");
   margin: 4rem auto;
 }
-.alatt{
+
+.alatt {
   font-size: xx-large;
-  font-style: italic ;
-  
+  font-style: italic;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
+
+
 }
-hr{
-  margin: 0 ;
+
+hr {
+  margin: 0;
 }
-.email{
+
+.email {
   text-align: center;
-  
-  padding:.5rem 1rem 1rem 1rem;
+
+  padding: .5rem 1rem 1rem 1rem;
 }
+
 .navbar-collapse {
   flex-grow: 0;
 }
@@ -321,34 +337,41 @@ hr{
 .dropdown-toggle {
   color: #ffffff8C;
 }
-.kisdrón{
+
+.kisdrón {
   width: 100px;
   margin: .5rem auto 0rem auto;
-  
-  
+
+
 }
-.kisdrón-row{
-  
+
+.kisdrón-row {
+
   padding: 2rem;
 }
-.rehák{
+
+.rehák {
   width: 100%;
   border-radius: 1rem;
   margin: 0rem 0 re 1rem 1rem;
-  
+
 }
-.rehákdiv{
+
+.rehákdiv {
   margin: 1rem;
-    
+
 }
-.white{
+
+.white {
   background-color: #fff;
 }
-footer{
+
+footer {
   background-color: #aeb4c1 !important;
   font-family: "Rubik", sans-serif;
   background-color: white;
 }
+
 /* GPT részek javított */
 /* Navbar items animation */
 .navbar-nav>.nav-item {
