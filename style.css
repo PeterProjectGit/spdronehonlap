@@ -14,7 +14,10 @@ h1 {
   margin: 0;
   padding: 1.2rem;
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
 .card-text,
 .card-title {
   height: 50%;
@@ -24,7 +27,9 @@ h1 {
   justify-content: center;
 }
 
-.row {}
+.row {
+  margin:0 auto;
+}
 
 .firsttext {
   margin: auto;
@@ -40,7 +45,7 @@ h1 {
 
 .topimg {
   border-radius: 0 2rem 2rem 0;
-  opacity: 0.9;
+  opacity: 1;
   width: 100%;
 }
 
@@ -51,8 +56,8 @@ p {
 
 .allcards {
 
-
-  background-color: rgba(133, 132, 132, .8);
+  
+  background-color: #3e4451;
 
 }
 
@@ -65,14 +70,14 @@ html,
 .firsttext {
 
   background: linear-gradient(to right, #3e4451, rgba(29, 224, 100, 0.43) 100%);
-
+  
   color: white;
 }
 
 
 body {
 
-  background-image: url("../background.jpg");
+  background-image: url("./img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -95,7 +100,9 @@ body {
 
   font-weight: 900;
 }
-
+.fejléc{
+  
+}
 .container-fluid li {
   list-style-type: none;
 }
@@ -173,7 +180,7 @@ li {
 
 .card {
 
-  background: linear-gradient(to right, #e0dfdf, #86BBE9);
+  
   padding: 0;
   margin: 3rem;
   width: 100%;
@@ -226,14 +233,19 @@ li {
   background-color: rgba(29, 224, 100, .65) !important;
 }
 
-.myrow {}
+.myrow {
+  
+  width: 100%;
+}
 
 .ár {
   height: 100%;
   cursor: auto;
 }
 
-.arcol {}
+.arcol {
+  
+}
 
 .operatőri-div {
   padding: 0 .45rem 0 0 !important;
@@ -261,10 +273,10 @@ li {
 
 #bemutató {
   color: rgb(255, 255, 255);
-  text-align: justify;
+  
   padding: 3rem;
   text-indent: 2rem;
-  font-size: larger;
+  font-size:x-large;
   background-color: rgba(119, 119, 119, 0.5);
 
   border-radius: 1rem;
@@ -299,14 +311,50 @@ li {
 }
 
 /* javítás részek */
+.firstcard{
+  background: linear-gradient(to right, #e0dfdf, #86BBE9);
+}
+.seccard{
+  background: linear-gradient(to right, #e0dfdf, #dd7e7e);
+}
+.thirdcard{
+  background: linear-gradient(to right, #e0dfdf, #99dc8a);
+}
+.fourthcard{
+  background: linear-gradient(to right, #e0dfdf, #988dfa);
+}
+.sixthcard{
+  background-color: #e0dfdf;
+}
+.text-center{
+  margin: auto;
+}
+.ittegy{
+ padding: 6rem;
+ background: linear-gradient( #e0dfdf, #3e4451);
+
+}
+.képalattiszöveg{
+  padding: 1rem;
+  text-align: center;
+}
 .valasztext {
   line-height: 1.5;
   margin: 5rem 0 5rem 0;
+}
+.felsokepkeret{
+  margin: 0;
+  padding: 0  ;
+  opacity: 1;
+  background-color: #3e4451;
 }
 
 .hatterkepes {
   background-image: url("./img/szovegter.jpg");
   margin: 4rem auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 .alatt {
@@ -324,10 +372,14 @@ hr {
   margin: 0;
 }
 
-.email {
+.footertext {
   text-align: center;
-
-  padding: .5rem 1rem 1rem 1rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+.email{
+  background: linear-gradient(#aeb4c1, rgb(138, 164, 120));
+  padding: .5rem 1rem 1rem 1rem
 }
 
 .navbar-collapse {
@@ -353,7 +405,7 @@ hr {
 .rehák {
   width: 100%;
   border-radius: 1rem;
-  margin: 0rem 0 re 1rem 1rem;
+  margin: 0rem 0rem 1rem 1rem;
 
 }
 
@@ -361,7 +413,15 @@ hr {
   margin: 1rem;
 
 }
-
+.haromkepcol{
+  display: flex;
+  
+}
+.haromkep{
+  margin: 1rem auto;
+  border-radius: 1rem;
+  width: 60%;
+}
 .white {
   background-color: #fff;
 }
@@ -370,7 +430,66 @@ footer {
   background-color: #aeb4c1 !important;
   font-family: "Rubik", sans-serif;
   background-color: white;
+  
 }
+.footerrow{
+  font-size: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+/* icons */
+#tiktok{
+  transition: background-color 0.3s ease;
+  border-radius: 1.5rem;
+}
+#tiktok:hover{
+  background-color: rgb(69, 69, 69);
+}
+#facebook{
+  transition: background-color 0.3s ease;
+  border-radius: 1.5rem;
+  
+}
+#facebook:hover{
+  background-color: rgba(24, 119, 242, 0.8);
+  
+  
+
+}
+
+#instagram {
+  position: relative; 
+  border-radius: 1.1rem;
+  overflow: hidden; 
+}
+
+#instagram::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(45deg, #C13584, #E1306C, #F77737, #FCAF45);
+  transition: opacity 0.3s ease; 
+  opacity: 0; 
+  z-index: 0; 
+}
+
+#instagram:hover::before {
+  opacity: 0.8; 
+}
+
+#instagram img {
+  position: relative; 
+  z-index: 1; 
+  width: 100%; 
+  height: auto; 
+}
+
 
 /* GPT részek javított */
 /* Navbar items animation */
