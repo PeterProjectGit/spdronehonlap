@@ -1,4 +1,5 @@
 * {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,7 +23,6 @@ a{
 .card-title {
   height: 50%;
   display: flex;
-
   align-items: start;
   justify-content: center;
 }
@@ -31,13 +31,11 @@ a{
   margin:0 auto;
 }
 
-.firsttext {
+.fejléc{
   margin: auto;
-
   border-radius: 2rem;
-
 }
-
+/* A fejléc szövegének a divje */
 .textitself {
   margin: auto;
   padding: 1rem;
@@ -67,7 +65,7 @@ p {
 }
 
 html,
-.firsttext {
+.fejléc {
 
   background: linear-gradient(to right, #3e4451, rgba(29, 224, 100, 0.43) 100%);
   
@@ -97,12 +95,9 @@ body {
 }
 
 .navbar-brand {
-
   font-weight: 900;
 }
-.fejléc{
-  
-}
+
 .container-fluid li {
   list-style-type: none;
 }
@@ -179,8 +174,6 @@ li {
 }
 
 .card {
-
-  
   padding: 0;
   margin: 3rem;
   width: 100%;
@@ -242,7 +235,7 @@ li {
   height: 100%;
   cursor: auto;
 }
-
+/* kártyán lévő ár, és annak a colja */
 .arcol {
   
 }
@@ -258,19 +251,15 @@ li {
 .rólunk:hover {
   color: rgb(227, 148, 119);
 }
-
+/* felső bemutatkozó szöveg körüli keret */
 .bemutatodiv {
-
   margin: 4rem auto;
-
   padding: 1rem;
-
-
   max-width: 1000px;
   line-height: 1.7;
 
 }
-
+/* bemutatkozó szöveg */
 #bemutató {
   color: rgb(255, 255, 255);
   
@@ -282,7 +271,7 @@ li {
   border-radius: 1rem;
 
 }
-
+/* miért válassz minket szövege */
 .miért {
   text-align: center;
 
@@ -329,6 +318,7 @@ li {
 .text-center{
   margin: auto;
 }
+/* oktatásról rövid szemléltetés szöveg */
 .ittegy{
  padding: 6rem;
  background: linear-gradient( #e0dfdf, #3e4451);
@@ -348,7 +338,7 @@ li {
   opacity: 1;
   background-color: #3e4451;
 }
-
+/* a bemutatódiv háttere */
 .hatterkepes {
   background-image: url("./img/szovegter.jpg");
   margin: 4rem auto;
@@ -600,7 +590,7 @@ footer {
   }
 }
 
-/* GPT részek új */
+
 *::-webkit-scrollbar {
   max-height: 1rem;
   width: 10px;
@@ -631,3 +621,4 @@ footer {
 *::-webkit-scrollbar-thumb:active {
   background-color: rgba(29, 224, 100, 0.4);
 }
+/* GPT részek új */
