@@ -10,7 +10,9 @@
   user-select: none;
   /* Standard syntax */
 }
-
+img{
+  width: 100%;
+}
 h1 {
   margin: 0;
   padding: 1.2rem;
@@ -21,12 +23,16 @@ a{
 }
 .card-text,
 .card-title {
-  height: 50%;
+  height: 20%;
   display: flex;
-  align-items: start;
   justify-content: center;
+  align-items: baseline;
 }
 
+/* ???? */
+/* li{ 
+  font-style: italic;
+} */
 .row {
   margin:0 auto;
 }
@@ -75,7 +81,7 @@ html,
 
 body {
 
-  background-image: url("./img/background.jpg");
+  background-image: url("./img/background.jpg");  
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -185,7 +191,10 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: end;
+
+
   
+
 
 }
 
@@ -364,6 +373,8 @@ hr {
   margin: 0;
 }
 
+
+
 .footertext {
   text-align: center;
   text-decoration: none;
@@ -383,9 +394,9 @@ hr {
 }
 
 .kisdrón {
-  width: 100px;
-  margin: .5rem auto 0rem auto;
-
+  /* width: 100px;
+  margin: .5rem auto 0rem auto; */
+  width: 80px;
 
 }
 
@@ -419,7 +430,8 @@ hr {
 }
 
 footer {
-  background-color: #aeb4c1 !important;
+  background-image: linear-gradient(rgb(161, 158, 158) 90%,rgb(79, 187, 102));
+  /* background-color: #aeb4c1 !important; */
   font-family: "Rubik", sans-serif;
   background-color: white;
   
@@ -432,8 +444,66 @@ footer {
   
   
 }
+
+/* Footer átgondolt változat */
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+
+
+
+.f-icons{
+  display: flex;
+  justify-content:space-around;
+  gap: 10px;
+  align-items: center;
+}
+
+.tiktok{
+  font-size: 25px;
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: .1s ease-in-out;
+  padding: 2px;
+  width: 38px;
+}
+.tiktok:hover{
+  background-color: black;
+  color: white;
+}
+
+.instagram{
+  font-size: 35px;
+  transition: .1s  ease-in-out;
+}
+
+.instagram:hover{
+  /* background-image: radial-gradient(purple, pink, red, pink, yellow, orange, red); */
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 20%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.facebook{
+  font-size: 35px;
+  transition: .1s ease-in-out;
+}
+
+.facebook:hover{
+  color: rgb(22, 110, 250);
+}
+
+  
+
 /* icons */
-#tiktok{
+/* #tiktok{
   transition: background-color 0.3s ease;
   border-radius: 1.5rem;
 }
@@ -452,11 +522,6 @@ footer {
 
 }
 
-#instagram {
-  position: relative; 
-  border-radius: 1.1rem;
-  overflow: hidden; 
-}
 
 #instagram::before {
   content: '';
@@ -475,12 +540,19 @@ footer {
   opacity: 0.8; 
 }
 
+#instagram {
+  
+  position: relative; 
+  border-radius: 1.1rem;
+  overflow: hidden; 
+}
+
 #instagram img {
   position: relative; 
   z-index: 1; 
   width: 100%; 
   height: auto; 
-}
+}  */
 
 
 /* GPT részek javított */
