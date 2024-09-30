@@ -178,12 +178,14 @@ li {
   margin: 3rem;
   width: 100%;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+  max-height: 40rem;
 }
 
-.card-body {
+.card-body{
   display: flex;
   flex-direction: column;
   justify-content: end;
+  
 
 }
 
