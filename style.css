@@ -37,6 +37,10 @@ a{
   margin:0 auto;
   padding: 0;
 }
+tr td{
+  padding: 0.5rem;
+  border: solid #3e4451 ;
+}
 
 .fejléc{
   margin: auto;
@@ -336,6 +340,7 @@ li {
 /* oktatásról rövid szemléltetés szöveg */
 .ittegy{
  padding: 1rem;
+ 
  background: linear-gradient( #e0dfdf, #3e4451);
 
 }
@@ -435,12 +440,12 @@ hr {
 /* a láthatatlan div js-hez*/
 .minvisible{
  
-  top: 15rem; 
+  top: 7rem; 
   left: 0; 
   right: 0; 
   margin: auto;
   z-index: 2;
-  display: none;
+  display:none;
   position: fixed !important; 
   width: 50vw; 
   height: 50vh;
@@ -451,6 +456,8 @@ hr {
   padding: 1.5rem;
   border-radius: 10px;
   background-color: #8CBCB9;
+  font-size: 1.4rem;
+  text-indent: 0.3rem;
 
 }
 
@@ -459,6 +466,13 @@ hr {
 
   border-radius: 1rem;
 
+}
+
+.hiddentable{
+  display: none;
+}
+.hiddentablesmall{
+  text-indent: 0rem;
 }
 @media (min-width: 768px){
   .card-text{
@@ -475,6 +489,7 @@ hr {
       width: 85vw; 
       height: 50vh;
       font-size: 1.2em; /* Nagyobb betűméret telefon méreten */
+      padding: 0.3rem;
      
       
   }
@@ -504,6 +519,7 @@ hr {
   }
   .ittegy{
     padding: 6rem;
+    font-size: 3rem;
   }
   
 }
@@ -511,7 +527,7 @@ hr {
   display: none;
 }
 
-@media (min-width:986px ) and (max-width: 1722px){
+@media (min-width:986px ) and (max-width: 2000px){
   .myinvisible{
     display: block;
   }
@@ -524,7 +540,16 @@ hr {
     
 }
 
-
+@media (min-width:1372px) {
+  .hiddentablesmall{
+    display: none;
+  }
+  .hiddentable{
+    display: flex;
+  }
+  
+  
+}
 
 #iksz{
   cursor: pointer;
