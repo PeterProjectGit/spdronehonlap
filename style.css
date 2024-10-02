@@ -45,7 +45,9 @@ a{
 /* A fejléc szövegének a divje */
 .textitself {
   margin: auto;
-  padding: 1rem;
+  padding: .8rem;
+  
+  
 }
 
 .topimg {
@@ -56,6 +58,7 @@ a{
 
 p {
   margin: 0;
+ 
 
 }
 
@@ -211,7 +214,7 @@ li {
   padding: 1rem;
 
   line-height: 1.5;
-  font-size: large;
+  font-size:smaller ;
 
 }
 
@@ -266,8 +269,7 @@ li {
 }
 /* felső bemutatkozó szöveg körüli keret */
 .bemutatodiv {
-  margin: 4rem auto;
-  padding: 1rem;
+  
   max-width: 1000px;
   line-height: 1.7;
 
@@ -276,9 +278,9 @@ li {
 #bemutató {
   color: rgb(255, 255, 255);
   
-  padding: 3rem;
+ padding: 0.5rem;
   text-indent: 2rem;
-  font-size:x-large;
+  font-size:xx-large;
   background-color: rgba(119, 119, 119, 0.9);
 
   border-radius: 1rem;
@@ -333,7 +335,7 @@ li {
 }
 /* oktatásról rövid szemléltetés szöveg */
 .ittegy{
- padding: 6rem;
+ padding: 1rem;
  background: linear-gradient( #e0dfdf, #3e4451);
 
 }
@@ -407,7 +409,8 @@ hr {
 .rehák {
   width: 100%;
   border-radius: 1rem;
-  margin: 0rem 0rem 1rem 1rem;
+  
+
 
 }
 
@@ -417,6 +420,7 @@ hr {
 }
 .haromkepcol{
   display: flex;
+  flex-direction: column;
   
 }
 .haromkep{
@@ -431,15 +435,15 @@ hr {
 /* a láthatatlan div js-hez*/
 .minvisible{
  
-  top: 5rem; 
+  top: 15rem; 
   left: 0; 
   right: 0; 
   margin: auto;
   z-index: 2;
   display: none;
   position: fixed !important; 
-  width: 70vw; 
-  height: 70vh;
+  width: 50vw; 
+  height: 50vh;
 
 
 
@@ -449,6 +453,78 @@ hr {
   background-color: #8CBCB9;
 
 }
+
+.hiddenimg{
+  display: none;
+
+  border-radius: 1rem;
+
+}
+@media (min-width: 768px){
+  .card-text{
+    font-size: larger;
+  }
+  
+}
+@media (max-width: 768px){
+  
+}
+@media (max-width: 986px) {
+  
+  .minvisible {
+      width: 85vw; 
+      height: 50vh;
+      font-size: 1.2em; /* Nagyobb betűméret telefon méreten */
+     
+      
+  }
+  .rehák{
+    display: none;
+  }
+  .hiddenimg{
+    display: block;
+  }
+  
+}
+
+
+@media (max-width: 981px){
+  .textitself{
+    margin: 1.2rem;
+}
+
+}
+@media (min-width:986px ) {
+  .bemutatodiv{
+    margin: 4rem auto;
+    padding: 1rem 1rem 1rem 0;
+  }
+  .rehák{
+    margin: 0rem 1rem 1rem 1rem;
+  }
+  .ittegy{
+    padding: 6rem;
+  }
+  
+}
+.myinvisible{
+  display: none;
+}
+
+@media (min-width:986px ) and (max-width: 1722px){
+  .myinvisible{
+    display: block;
+  }
+  
+}
+@media (min-width:1276px ){
+    #bemutató{
+      padding: 3rem;
+    }
+    
+}
+
+
 
 #iksz{
   cursor: pointer;
@@ -462,7 +538,10 @@ hr {
 .no-scroll {
   overflow: hidden; /* Tiltsa le a görgetést  ha aktív a felsőbb layer*/
 }
-
+#a{
+  background-color: #00aeff;
+  width: 100vh;
+}
 
 footer {
   background-image: linear-gradient(rgb(161, 158, 158) 90%,rgb(79, 187, 102));
