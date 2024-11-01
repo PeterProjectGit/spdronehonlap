@@ -992,6 +992,7 @@ textarea.input2 + .focus-input2::after {
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 
+
 .validate-input {
   position: relative;
 }
@@ -1029,7 +1030,7 @@ textarea.input2 + .focus-input2::after {
 }
 
 .alert-validate::after {
-  content: "\f12a";
+  content: "☿";
   font-family: FontAwesome;
   display: block;
   position: absolute;
