@@ -447,15 +447,14 @@ hr {
   z-index: 2;
   display:none;
   position: fixed !important; 
-  width: 50vw; 
-  height: 50vh;
+  
 
 
 
   /* style részletei a rejtett elemnek */
   padding: 1.5rem;
   border-radius: 10px;
-  background-color: #8CBCB9;
+  background-color: #ffffff;
   font-size: 1.4rem;
   text-indent: 0.3rem;
 
@@ -486,8 +485,8 @@ hr {
 @media (max-width: 986px) {
   
   .minvisible {
-      width: 85vw; 
-      height: 50vh;
+      width: 50vw; 
+      
       font-size: 1.2em; /* Nagyobb betűméret telefon méreten */
       padding: 0.3rem;
      

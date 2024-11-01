@@ -364,27 +364,43 @@
 </szakasz>
 
 <!-- struktúrán kívüli rész (display:none) js-hez -->
-<div class="minvisible">
-  <a id="iksz">✗</a>
-  
-  <div class="d-flex flex-direction-c">
-    <img src="img/emailicon.png" alt="E-mail" style="width: 32px;">
-    <a href="mailto:spdrone.info@gmail.com"> spdrone.info@gmail.com</a>  
-    
-  </div>
-  <p style="text-indent: 2.1rem;">0-24 Írhatsz</p>
-  <br>
-  <div class="d-flex flex-direction-c">
-    <img src="img/favicon.ico" alt="Phone" style="width: 32px;">
-    <a href="tel:+36309959712"> +36309959712</a>
-  </div>
-  <br>
-  <div class="d-flex flex-direction-c">
-    <img src="img/idő.ico" alt="idő" style="width: 32px;">
-    <p>Telefonszám hívható: (óra) </p>
-    
-  </div>
 
+  
+  
+      <div class="wrap-contact2 minvisible">
+        <a id="iksz">✗</a>
+        <form class="contact2-form validate-form">
+          <span class="contact2-form-title">
+            Írj Nekünk
+          </span>
+
+          <div class="wrap-input2 validate-input" data-validate="Name is required">
+            <input class="input2" type="text" name="name">
+            <span class="focus-input2" data-placeholder="NÉV"></span>
+          </div>
+
+          <div class="wrap-input2 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+            <input class="input2" type="text" name="email">
+            <span class="focus-input2" data-placeholder="EMAIL"></span>
+          </div>
+
+          <div class="wrap-input2 validate-input" data-validate="Message is required">
+            <textarea class="input2" name="message"></textarea>
+            <span class="focus-input2" data-placeholder="ÜZENET"></span>
+          </div>
+
+          <div class="container-contact2-form-btn">
+            <div class="wrap-contact2-form-btn">
+              <div class="contact2-form-bgbtn"></div>
+              <button class="contact2-form-btn">
+                Üzenet Küldése
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+    <!-- 
   <br>
   <table class="hiddentablesmall">
     <tr>
@@ -429,7 +445,7 @@
 
     </tr>
 
-  </table>
+  </table> -->
 
 
 
