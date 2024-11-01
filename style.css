@@ -1194,6 +1194,12 @@ textarea.input2 + .focus-input2::after {
     padding-top: 30px;
     font-size: 3rem;
   }
+  .hiddentext{
+    text-align: left;
+  }
+  .minvisible{
+    width: 25rem;
+  }
  
 }
 
