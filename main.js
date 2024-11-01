@@ -7,12 +7,6 @@ const keret = document.querySelector(".minvisible")
 const szakasz = document.querySelector("szakasz")
 const body = document.querySelector("body")
 
-
-
-
-
-
-
 btnPrimary.forEach(button => {
     button.addEventListener("click", () => {
         
