@@ -46,16 +46,26 @@ if (!$stmt->execute()) {
 $stmt->close();
 $conn->close();
 
-function Redirect($url, $permanent = false)
-{
-  header('Location: ' . $url, true, $permanent ? 301 : 302);
-  exit();
-}
-Redirect('https://sp-drone.hu/', false)
+
+
+
+
 
 
 
 // Close the statement and connection
+$stmt->close();
+$conn->close();
+
+
+echo "sikeres adatrögzítés.";
+echo "<br>Az oldalra való visszatéréshez kattints <a href='https://sp-drone.hu/'>Ide</a>"
+
+
+
+
+
+
 
 
 

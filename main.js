@@ -1,12 +1,5 @@
 
 
-// submit_button = document.querySelectorAll(".contact2-form-btn")
-// submit_button.forEach(gomb => {
-//     gomb.addEventListener("click", function(event){
-       
-//     })
-// });
- 
 
 
 // gpt kódok javított
