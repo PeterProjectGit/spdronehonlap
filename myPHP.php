@@ -1,39 +1,62 @@
 <?php
 
+// weblap post-ból kinyerés
 $name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 
+// adatbázis adatok
+$servername = "157.90.129.17";
+$username = "spdrrsu_almaa";
+$password = "mHpKR-#fyCU9xSRY"; 
+$dbname = "spdrrsu_alma"; 
 
-$host = "localhost";
-$dbname = "spdrrsu_FelhasznaloiAdatok";
-$username = "root";
-$password = "jSESB6pSXqEvwvtTU4Ny";
+// szerver csatlakozás
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-$conn = mysqli_connect($host,$username,$password,$dbname);
-
-
-if (!mysqli_stmt_prepare($stmt, $sql)) {
-    die("SQL statement preparation error: " . mysqli_error($conn));
+// konneekció
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
 
-$sql = "INSERT INTO message (name, email, message)
-    VALUES (?,?,?)";
-
-$stmt = mysqli_stmt_init($conn);
-
-if (mysqli_stmt_prepare($stmt,$sql)){
-    die(mysqli_error($conn));
+if (!$conn->set_charset("utf8mb4")) {
+    die("Error loading character set utf8mb4: " . $conn->error);
 }
 
-mysqli_stmt_bind_param($stmt, "sss", $name, $email,$message);
+// sql
+$sql = "INSERT INTO messages (name, email, message) VALUES (?, ?, ?)";
 
-mysqli_stmt_execute($stmt);
+// preparálás haha
+$stmt = $conn->prepare($sql);
 
-if (!mysqli_stmt_execute($stmt)) {
-    die("Execution error: " . mysqli_stmt_error($stmt));
+// extra check 
+if (!$stmt) {
+    die("SQL statement preparation error: " . $conn->error);
 }
 
- 
-echo "adat rögzítve.";
+// paraméterek hozzárendelése
+$stmt->bind_param("sss", $name, $email, $message);
+
+// végrehajtás
+if (!$stmt->execute()) {
+    die("Execution error: " . $stmt->error);
+}
+
+$stmt->close();
+$conn->close();
+
+function Redirect($url, $permanent = false)
+{
+  header('Location: ' . $url, true, $permanent ? 301 : 302);
+  exit();
+}
+Redirect('https://sp-drone.hu/', false)
+
+
+
+// Close the statement and connection
+
+
+
+?>
